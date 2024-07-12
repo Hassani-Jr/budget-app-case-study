@@ -19,28 +19,28 @@ export default function Page(): React.JSX.Element {
   return (
     <Grid container spacing={3}>
       <Grid lg={3} sm={6} xs={12}>
-        <Budget diff={12} trend="up" sx={{ height: '100%' }} value="$24k" />
+        <Budget diff={12} trend="up" sx={{ height: '100%' }} value="$5k" />
       </Grid>
       <Grid lg={3} sm={6} xs={12}>
         <TotalCustomers diff={16} trend="down" sx={{ height: '100%' }} value="1.6k" />
       </Grid>
       <Grid lg={3} sm={6} xs={12}>
-        <TasksProgress sx={{ height: '100%' }} value={75.5} />
+        <TasksProgress sx={{ height: '100%' }} value={26.5} />
       </Grid>
       <Grid lg={3} sm={6} xs={12}>
-        <TotalProfit sx={{ height: '100%' }} value="$15k" />
+        <TotalProfit sx={{ height: '100%' }} value="15k" />
       </Grid>
       <Grid lg={8} xs={12}>
         <Sales
           chartSeries={[
-            { name: 'This year', data: [18, 16, 5, 8, 3, 14, 14, 16, 17, 19, 18, 20] },
-            { name: 'Last year', data: [12, 11, 4, 6, 2, 9, 9, 10, 11, 12, 13, 13] },
+            { name: 'This year', data: [3.5, 3, 5, 6, 7, 4, 2.8, 6, 4.3, 4.1, 5.4, 6.6] },
+            { name: 'Last year', data: [2.76, 2.9, 4.4, 6, 2, 2.3, 5, 4, 3.9, 5, 7, 5] },
           ]}
           sx={{ height: '100%' }}
         />
       </Grid>
       <Grid lg={4} md={6} xs={12}>
-        <Traffic chartSeries={[63, 15, 22]} labels={['Desktop', 'Tablet', 'Phone']} sx={{ height: '100%' }} />
+        <Traffic chartSeries={[34, 33, 33]} labels={['Health Care', 'Savings', 'Wellness']} sx={{ height: '100%' }} />
       </Grid>
       <Grid lg={4} md={6} xs={12}>
         <LatestProducts
@@ -84,44 +84,44 @@ export default function Page(): React.JSX.Element {
           orders={[
             {
               id: 'ORD-007',
-              customer: { name: 'Ekaterina Tankova' },
+              customer: { name: 'Wellness Haven' },
               amount: 30.5,
               status: 'pending',
               createdAt: dayjs().subtract(10, 'minutes').toDate(),
             },
             {
               id: 'ORD-006',
-              customer: { name: 'Cao Yu' },
+              customer: { name: 'Euphoria Essentials' },
               amount: 25.1,
-              status: 'delivered',
+              status: 'approved',
               createdAt: dayjs().subtract(10, 'minutes').toDate(),
             },
             {
               id: 'ORD-004',
-              customer: { name: 'Alexa Richardson' },
+              customer: { name: 'Harmony Hub' },
               amount: 10.99,
               status: 'refunded',
               createdAt: dayjs().subtract(10, 'minutes').toDate(),
             },
             {
               id: 'ORD-003',
-              customer: { name: 'Anje Keizer' },
+              customer: { name: 'Blissful Botanicals' },
               amount: 96.43,
               status: 'pending',
               createdAt: dayjs().subtract(10, 'minutes').toDate(),
             },
             {
               id: 'ORD-002',
-              customer: { name: 'Clarke Gillebert' },
+              customer: { name: 'Serenity Supplies' },
               amount: 32.54,
-              status: 'delivered',
+              status: 'approved',
               createdAt: dayjs().subtract(10, 'minutes').toDate(),
             },
             {
               id: 'ORD-001',
-              customer: { name: 'Adam Denisov' },
+              customer: { name: 'Purely Pampered' },
               amount: 16.76,
-              status: 'delivered',
+              status: 'approved',
               createdAt: dayjs().subtract(10, 'minutes').toDate(),
             },
           ]}

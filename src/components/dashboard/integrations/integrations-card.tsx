@@ -15,7 +15,7 @@ export interface Integration {
   title: string;
   description: string;
   logo: string;
-  installs: number;
+  availiable: number;
   updatedAt: Date;
 }
 
@@ -52,7 +52,7 @@ export function IntegrationCard({ integration }: IntegrationCardProps): React.JS
         <Stack sx={{ alignItems: 'center' }} direction="row" spacing={1}>
           <DownloadIcon fontSize="var(--icon-fontSize-sm)" />
           <Typography color="text.secondary" display="inline" variant="body2">
-            {integration.installs} installs
+            {integration.availiable} days availiable
           </Typography>
         </Stack>
       </Stack>

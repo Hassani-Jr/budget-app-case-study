@@ -15,7 +15,7 @@ import Select from '@mui/material/Select';
 import Grid from '@mui/material/Unstable_Grid2';
 
 const states = [
-  { value: 'alabama', label: 'Alabama' },
+  { value: 'Virginia', label: 'Virginia' },
   { value: 'new-york', label: 'New York' },
   { value: 'san-francisco', label: 'San Francisco' },
   { value: 'los-angeles', label: 'Los Angeles' },

@@ -17,7 +17,7 @@ import dayjs from 'dayjs';
 
 const statusMap = {
   pending: { label: 'Pending', color: 'warning' },
-  delivered: { label: 'Delivered', color: 'success' },
+  approved: { label: 'Approved', color: 'success' },
   refunded: { label: 'Refunded', color: 'error' },
 } as const;
 
@@ -25,7 +25,7 @@ export interface Order {
   id: string;
   customer: { name: string };
   amount: number;
-  status: 'pending' | 'delivered' | 'refunded';
+  status: 'pending' | 'approved' | 'refunded';
   createdAt: Date;
 }
 
@@ -43,8 +43,8 @@ export function LatestOrders({ orders = [], sx }: LatestOrdersProps): React.JSX.
         <Table sx={{ minWidth: 800 }}>
           <TableHead>
             <TableRow>
-              <TableCell>Order</TableCell>
-              <TableCell>Customer</TableCell>
+              <TableCell>Purchases</TableCell>
+              <TableCell>Store</TableCell>
               <TableCell sortDirection="desc">Date</TableCell>
               <TableCell>Status</TableCell>
             </TableRow>

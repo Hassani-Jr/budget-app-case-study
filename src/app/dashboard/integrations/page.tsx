@@ -21,50 +21,50 @@ export const metadata = { title: `Integrations | Dashboard | ${config.site.name}
 const integrations = [
   {
     id: 'INTEG-006',
-    title: 'Dropbox',
-    description: 'Dropbox is a file hosting service that offers cloud storage, file synchronization, a personal cloud.',
-    logo: '/assets/logo-dropbox.png',
-    installs: 594,
+    title: 'Mint',
+    description: 'Mint is a free, web-based personal financial management service for the US and Canada.',
+    logo: '/assets/mint-logo.png',
+    availiable: 754,
     updatedAt: dayjs().subtract(12, 'minute').toDate(),
   },
   {
     id: 'INTEG-005',
-    title: 'Medium Corporation',
-    description: 'Medium is an online publishing platform developed by Evan Williams, and launched in August 2012.',
-    logo: '/assets/logo-medium.png',
-    installs: 625,
+    title: 'Headspace',
+    description: 'Headspace is an English-American online healthcare company, specializing in meditation.',
+    logo: '/assets/headspace-logo.jpeg',
+    availiable: 892,
     updatedAt: dayjs().subtract(43, 'minute').subtract(1, 'hour').toDate(),
   },
   {
     id: 'INTEG-004',
-    title: 'Slack',
-    description: 'Slack is a cloud-based set of team collaboration tools and services, founded by Stewart Butterfield.',
-    logo: '/assets/logo-slack.png',
-    installs: 857,
+    title: 'Wealthfront',
+    description: 'Wealthfront is an automated investment service firm based in Palo Alto, California.',
+    logo: '/assets/wealthfront-logo.jpeg',
+    availiable: 670,
     updatedAt: dayjs().subtract(50, 'minute').subtract(3, 'hour').toDate(),
   },
   {
     id: 'INTEG-003',
-    title: 'Lyft',
-    description: 'Lyft is an on-demand transportation company based in San Francisco, California.',
-    logo: '/assets/logo-lyft.png',
-    installs: 406,
+    title: 'Fitbit',
+    description: 'Fitbit is an American consumer electronics and fitness company.',
+    logo: '/assets/fitbit-logo.jpeg',
+    availiable: 1024,
     updatedAt: dayjs().subtract(7, 'minute').subtract(4, 'hour').subtract(1, 'day').toDate(),
   },
   {
     id: 'INTEG-002',
-    title: 'GitHub',
-    description: 'GitHub is a web-based hosting service for version control of code using Git.',
-    logo: '/assets/logo-github.png',
-    installs: 835,
+    title: 'Betterment',
+    description: 'Betterment is an American financial advisory company which provides digital investment services.',
+    logo: '/assets/betterment-logo.png',
+    availiable: 758,
     updatedAt: dayjs().subtract(31, 'minute').subtract(4, 'hour').subtract(5, 'day').toDate(),
   },
   {
     id: 'INTEG-001',
-    title: 'Squarespace',
-    description: 'Squarespace provides software as a service for website building and hosting. Headquartered in NYC.',
-    logo: '/assets/logo-squarespace.png',
-    installs: 435,
+    title: 'MyFitnessPal',
+    description: 'MyFitnessPal is a smartphone app and website that tracks diet and exercise.',
+    logo: '/assets/myfitnesspal-logo.jpeg',
+    availiable: 1204,
     updatedAt: dayjs().subtract(25, 'minute').subtract(6, 'hour').subtract(6, 'day').toDate(),
   },
 ] satisfies Integration[];
@@ -74,21 +74,8 @@ export default function Page(): React.JSX.Element {
     <Stack spacing={3}>
       <Stack direction="row" spacing={3}>
         <Stack spacing={1} sx={{ flex: '1 1 auto' }}>
-          <Typography variant="h4">Integrations</Typography>
-          <Stack sx={{ alignItems: 'center' }} direction="row" spacing={1}>
-            <Button color="inherit" startIcon={<UploadIcon fontSize="var(--icon-fontSize-md)" />}>
-              Import
-            </Button>
-            <Button color="inherit" startIcon={<DownloadIcon fontSize="var(--icon-fontSize-md)" />}>
-              Export
-            </Button>
-          </Stack>
+          <Typography variant="h4">Deals</Typography>
         </Stack>
-        <div>
-          <Button startIcon={<PlusIcon fontSize="var(--icon-fontSize-md)" />} variant="contained">
-            Add
-          </Button>
-        </div>
       </Stack>
       <CompaniesFilters />
       <Grid container spacing={3}>
